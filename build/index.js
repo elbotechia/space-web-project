@@ -8,7 +8,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+const app_1 = require("./app");
 const run = () => __awaiter(void 0, void 0, void 0, function* () {
+    const server = new app_1.Server();
+    server.listen();
     console.log('api running');
 });
 run();
