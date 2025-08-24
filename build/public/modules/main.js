@@ -70,6 +70,53 @@ const recoveryTemplate = ()=>{
     `)
 }
 
+const contactTemplate = ()=>{
+    return(
+        `
+        <section>
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através do formulário abaixo:</p>
+        <form>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+        `
+    )
+}
+
+const AboutTemplate = ()=>{
+    return(`
+         <section class="hero">
+        <h2>Bem-vindo ao Desafio 2</h2>
+        <p>Este é um exemplo de página HTML estruturada.</p>
+      </section>
+      <section class="features">
+        <h2>Recursos do Desafio 2</h2>
+        <ul>
+          <li>Recurso 1</li>
+          <li>Recurso 2</li>
+          <li>Recurso 3</li>
+        </ul>
+        <ul>
+          <li>Recurso 1</li>
+          <li>Recurso 2</li>
+          <li>Recurso 3</li>
+        </ul>
+        <ul>
+          <li>Recurso 1</li>
+          <li>Recurso 2</li>
+          <li>Recurso 3</li>
+        </ul>
+      </section>
+        `)
+}
+
 
 const switcherAuth = ()=>{
     const app = document.getElementById("app")
@@ -82,7 +129,26 @@ const switcherAuth = ()=>{
     document.getElementById("btnAuth3")?.addEventListener("click", ()=>{
         app.innerHTML = recoveryTemplate()
     })
+
 }
+
+
+const offCanvasSwitcher = ()=>{
+        document.getElementById("offCanvasBtn1")?.addEventListener("click", ()=>{
+        app.innerHTML=AuthTemplate()
+         switcherAuth()
+    })
+
+        document.getElementById("offCanvasBtn2")?.addEventListener("click", ()=>{
+        app.innerHTML=AboutTemplate()
+         switcherAuth()
+    })
+
+        document.getElementById("offCanvasBtn3")?.addEventListener("click", ()=>{
+        app.innerHTML=contactTemplate()
+    })
+}
+
 
 const showAuth = ()=>{
    const app = document.getElementById("app");
@@ -93,3 +159,4 @@ const showAuth = ()=>{
 }
 
 showAuth()
+offCanvasSwitcher()
