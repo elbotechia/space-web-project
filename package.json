@@ -1,7 +1,7 @@
 {
     "name": "space-web-project",
     "version": "1.0.0",
-    "description": "projeto usina eco-cultural",
+    "description": "projeto space web",
     "main": "src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/botechia-erika/space-web-project.git"
+        "url": "git+https://github.com/elbotechia/space-web-project.git"
     },
-    "author": "botechia-erika <24.01905-4@maua.br>",
+    "author": "elbotechia <elbotechia@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/botechia-erika/space-web-project/issues"
+        "url": "https://github.com/elbotechia/space-web-project/issues"
     },
-    "homepage": "https://github.com/botechia-erika/space-web-project#readme",
+    "homepage": "https://github.com/elbotechia/space-web-project#readme",
     "devDependencies": {
         "@types/bcrypt": "^5.0.2",
         "@types/bcryptjs": "^2.4.3",
@@ -44,7 +44,8 @@
     "dependencies": {
         "@types/http-errors": "^2.0.4",
         "@types/mongoose": "^5.11.96",
-        "@types/multer": "^1.4.12",
+        "@types/mongoose-delete": "^1.0.6",
+        "@types/multer": "^1.4.13",
         "bcrypt": "^5.1.1",
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.20.2",
@@ -57,8 +58,9 @@
         "moment": "^2.29.4",
         "moment-range": "^4.0.2",
         "mongoose": "^8.15.1",
+        "mongoose-delete": "^1.0.2",
         "morgan": "^1.10.0",
-        "multer": "^2.0.0",
+        "multer": "^2.0.2",
         "package": "^1.0.1",
         "sqlite3": "^5.1.6",
         "uuid": "^9.0.1"
